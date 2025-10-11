@@ -1,0 +1,2 @@
+docker build -t speech2text .
+docker run -d -p 8801:8801 [imageId]
