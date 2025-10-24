@@ -22,4 +22,4 @@ COPY . .
 EXPOSE 8801
 
 # Define the command to run your Flask application
-CMD ["python", "stt.py"]
+CMD ["python", "app.py"]
